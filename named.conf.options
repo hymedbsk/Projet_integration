@@ -1,11 +1,3 @@
-acl ip_interne { 
-
-	51.77.203.28; 
-	51.77.203.31; 
-	51.77.203.32;
-
-
-};
 options {
 
 				directory "/var/cache/bind";
@@ -29,14 +21,11 @@ options {
 				// you will need to update your keys.  See https://www.isc.org/bind-keys
 				//========================================================================
 	
-				dnssec-enable yes;
+
         dnssec-validation auto;
-        dnssec-lookaside auto;
-        
-      
+
         allow-transfer { none; };
-        allow-query { ip_interne; };
-        allow-recursion { ip_interne; };
+	liston-on-v6 {any};
         version none;
         
 };        
