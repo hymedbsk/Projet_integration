@@ -25,7 +25,7 @@ options {
         dnssec-validation auto;
 
         allow-transfer { none; };
-	liston-on-v6 {any};
+	
         version none;
         
 };        
