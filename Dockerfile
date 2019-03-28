@@ -12,4 +12,4 @@ COPY db.wt12.ephec-ti.be /etc/bind/
 
 EXPOSE 53
 
-CMD named -g
+CMD ["usr/sbin/named"]
