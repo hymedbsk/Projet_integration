@@ -28,4 +28,4 @@ view external {
         type master;
         file "/etc/bind/db.wt12.ephec-ti.be";
     };
-}
+};
