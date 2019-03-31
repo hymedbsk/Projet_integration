@@ -8,7 +8,7 @@ zone "." {
 // broadcast zones as per RFC 1912
 zone "wt12.ephec-ti.be" {
         type master;
-        file "/etc/bind/zones/db.wt12.ephec-ti.be";
+        file "/etc/bind/db.wt12.ephec-ti.be";
 };
 
 zone "localhost" {
