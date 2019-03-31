@@ -1,3 +1,9 @@
+acl ipInterne {
+        localhost;
+
+        51.77.203.31;
+    
+};
 options {
 
 				directory "/var/cache/bind";
@@ -23,7 +29,10 @@ options {
 	
 
         dnssec-validation auto;
-
+	auth-nxdomain no;    # conform to RFC103
+        listen-on {any;};
+	recursion yes;
+allow-query { ipInterne; };
         allow-transfer { none; };
 	
         version none;
