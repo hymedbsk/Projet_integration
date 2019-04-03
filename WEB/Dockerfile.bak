@@ -24,9 +24,9 @@ RUN mkdir /var/www/wt12.ephec-ti.be
 RUN mkdir /var/www/b2b.wt12.ephec-ti.be
 RUN mkdir /var/www/intra.wt12.ephec-ti.be
 
-COPY wt12.ephec-ti.be.html /var/www/wt1.ephec-ti.be/index.html
-COPY b2b.wt12.ephec-ti.be.html /var/www/b2b.wt1.ephec-ti.be/index.html
-COPY intra.wt12.ephec-ti.be.html /var/www/intranet.wt1.ephec-ti.be/index.html
+COPY wt12.ephec-ti.be.html /var/www/wt12.ephec-ti.be/index.html
+COPY b2b.wt12.ephec-ti.be.html /var/www/b2b.wt12.ephec-ti.be/index.html
+COPY intra.wt12.ephec-ti.be.html /var/www/intra.wt12.ephec-ti.be/index.html
 
 EXPOSE 80 443
 

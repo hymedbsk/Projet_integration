@@ -12,7 +12,13 @@ RUN ln -s /etc/apache2/sites-available/wt12.ephec-ti.be.conf /etc/apache2/sites-
 RUN ln -s /etc/apache2/sites-available/intra.wt12.ephec-ti.be.conf /etc/apache2/sites-enabled
 RUN ln -s /etc/apache2/sites-available/b2b.wt12.ephec-ti.be.conf /etc/apache2/sites-enabled
 
-
+RUN mkdir /etc/letsencrypt
+COPY WEB/wt12.ephec-ti.be.key /etc/letsencrypt/
+COPY WEB/wt12.ephec-ti.be.crt /etc/letsencrypt/
+COPY WEB/b2b.wt12.ephec-ti.be.key /etc/letsencrypt/
+COPY WEB/b2b.wt12.ephec-ti.be.crt /etc/letsencrypt/
+COPY WEB/intra.wt12.ephec-ti.be.key /etc/letsencrypt/
+COPY WEB/intra.wt12.ephec-ti.be.crt /etc/letsencrypt/
 
 RUN mkdir /var/www/wt12.ephec-ti.be
 RUN mkdir /var/www/b2b.wt12.ephec-ti.be
@@ -25,5 +31,4 @@ COPY WEB/intra.wt12.ephec-ti.be.html /var/www/intra.wt12.ephec-ti.be/index.html
 EXPOSE 80 443
 
 CMD apachectl -DFOREGROUND
-
 
