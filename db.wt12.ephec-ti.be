@@ -14,6 +14,4 @@ ns.wt12.ephec-ti.be.    IN      A     51.77.203.31
 www.wt12.ephec-ti.be.     IN      A   51.77.203.31
 b2b.wt12.ephec-ti.be.     IN      A   51.77.203.31
 intra.wt12.ephec-ti.be.   IN      A   51.77.203.31
-www     IN      CNAME   web
-b2b     IN      CNAME   web
 
