@@ -4,7 +4,7 @@ RUN apt update && apt upgrade -y && DEBIAN_FRONTEND=noninteractive apt install -
 
 RUN a2enmod ssl
 
-COPY WEB/wt12.ephec-ti.be.conf /etc/apache2/sites-available
+COPY wt12.ephec-ti.be.conf /etc/apache2/sites-available
 COPY WEB/intra.wt12.ephec-ti.be.conf /etc/apache2/sites-available
 COPY WEB/b2b.wt12.ephec-ti.be.conf /etc/apache2/sites-available
 
