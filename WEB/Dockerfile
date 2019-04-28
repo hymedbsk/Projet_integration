@@ -24,5 +24,5 @@ COPY WEB/intra.wt12.ephec-ti.be.html /var/www/intra.wt12.ephec-ti.be/index.html
 
 EXPOSE 80 443
 
-CMD apachectl -DFOREGROUND
+CMD apachectl -g
 
