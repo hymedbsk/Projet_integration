@@ -10,7 +10,7 @@ RUN ln -s /etc/apache2/sites-available/wt12.ephec-ti.be.conf /etc/apache2/sites-
 
 RUN mkdir /var/www/wt12.ephec-ti.be
 
-COPY WEB/wt12.ephec-ti.be.html /var/www/html/index.html
+COPY WEB/wt12.ephec-ti.be.html /var/www/wt12.ephec-ti.be/index.html
 
 EXPOSE 80 443
 
