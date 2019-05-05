@@ -9,7 +9,7 @@ COPY WEB/b2b.wt12.ephec-ti.be.conf /etc/apache2/sites-available
 RUN ln -s /etc/apache2/sites-available/wt12.ephec-ti.be.conf /etc/apache2/sites-enabled
 RUN ln -s /etc/apache2/sites-available/b2b.wt12.ephec-ti.be.conf /etc/apache2/sites-enabled
 COPY WEB/wt12.ephec-ti.be.html /var/www/html/index.html
-COPY WEB/b2b.wt12.ephec-ti.be.html /var/www/html/index.html
+COPY WEB/b2b.wt12.ephec-ti.be.html /var/www/html/
 
 EXPOSE 80 443
 
