@@ -5,12 +5,10 @@ RUN apt update && apt upgrade -y && DEBIAN_FRONTEND=noninteractive apt install -
 RUN a2enmod ssl
 
 COPY WEB/wt12.ephec-ti.be.conf /etc/apache2/sites-available
-COPY WEB/b2b.wt12.ephec-ti.be.conf /etc/apache2/sites-available
-RUN ln -s /etc/apache2/sites-available/wt12.ephec-ti.be.conf /etc/apache2/sites-enabled
-RUN ln -s /etc/apache2/sites-available/b2b.wt12.ephec-ti.be.conf /etc/apache2/sites-enabled
-COPY WEB/wt12.ephec-ti.be.html /var/www/html/
-COPY WEB/b2b.wt12.ephec-ti.be.html /var/www/html/
 
+RUN ln -s /etc/apache2/sites-available/wt12.ephec-ti.be.conf /etc/apache2/sites-enabled
+
+COPY WEB/wt12.ephec-ti.be.html /var/www/html/
 EXPOSE 80 443
 
 CMD apachectl -DFOREGROUND
