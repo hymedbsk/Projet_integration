@@ -11,7 +11,7 @@ wt12.ephec-ti.be.	IN	SOA	ns.wt12.ephec-ti.be. he201575@students.ephec.be. (
 	IN 	A	 51.77.203.31
 wt12.ephec-ti.be.      IN      NS      ns.wt12.ephec-ti.be.
 ns.wt12.ephec-ti.be.    IN      A     51.77.203.31
-www.wt12.ephec-ti.be.     IN      A   51.77.203.31
-b2b.wt12.ephec-ti.be.     IN      A   51.77.203.31
-intra.wt12.ephec-ti.be.   IN      A   51.77.203.31
+
+www     IN      CNAME   ns.wt12.ephec-ti.be.
+b2b     IN      CNAME   ns.wt12.ephec-ti.be.
 
