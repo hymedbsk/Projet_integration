@@ -26,7 +26,6 @@ COPY voicemail.conf /etc/asterisk/voicemail.conf
 
 
 EXPOSE 5060/udp
-EXPOSE 5060/tcp
 EXPOSE 10000-20000/udp
 
 # And run asterisk in the foreground.
