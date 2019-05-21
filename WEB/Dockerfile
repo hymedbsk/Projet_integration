@@ -12,7 +12,7 @@ RUN ln -s /etc/apache2/sites-available/b2b.wt12.ephec-ti.be.conf /etc/apache2/si
 
 RUN mkdir /var/www/b2b.wt12.ephec-ti.be
 RUN mkdir /var/www/wt12.ephec-ti.be
-RUN mkdir /var/www/wt12.ephec-ti.be
+
 RUN mkdir /var/www/wt12.ephec-ti.be/css
 RUN mkdir /var/www/wt12.ephec-ti.be/img
 
