@@ -12,10 +12,13 @@ RUN ln -s /etc/apache2/sites-available/b2b.wt12.ephec-ti.be.conf /etc/apache2/si
 
 RUN mkdir /var/www/b2b.wt12.ephec-ti.be
 RUN mkdir /var/www/wt12.ephec-ti.be
+RUN mkdir /var/www/wt12.ephec-ti.be/Wt
+RUN mkdir /var/www/wt12.ephec-ti.be/Wt/css
+RUN mkdir /var/www/wt12.ephec-ti.be/Wt/img
 
 COPY WEB/Wt/wt12.html /var/www/wt12.ephec-ti.be/index.html
-COPY WEB/Wt/css /var/www/wt12.ephec-ti.be
-COPY WEB/Wt/img /var/www/wt12.ephec-ti.be
+COPY WEB/Wt/css/style.css  /var/www/wt12.ephec-ti.be/Wt/css
+COPY WEB/Wt/img/bg.jpg /var/www/wt12.ephec-ti.be/Wt/img
 COPY WEB/b2b.wt12.ephec-ti.be.html /var/www/b2b.wt12.ephec-ti.be/index.html
 
 EXPOSE 80 443
