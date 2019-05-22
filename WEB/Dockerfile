@@ -23,7 +23,7 @@ COPY WEB/Wt/wt12.html /var/www/wt12.ephec-ti.be/index.html
 COPY WEB/Wt/css/style.css  /var/www/wt12.ephec-ti.be/css
 COPY WEB/Wt/img/bg.jpg /var/www/wt12.ephec-ti.be/img
 
-COPY WEB/b2b.html /var/www/b2b.wt12.ephec-ti.be/index.html
+COPY WEB/b2b/b2b.html /var/www/b2b.wt12.ephec-ti.be/index.html
 COPY WEB/b2b/css/style.css  /var/www/b2b.wt12.ephec-ti.be/css
 COPY WEB/b2b/img/bg.jpg  /var/www/b2b.wt12.ephec-ti.be/img
 COPY WEB/b2b/img/santa.png  /var/www/b2b.wt12.ephec-ti.be/img
