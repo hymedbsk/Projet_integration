@@ -18,6 +18,7 @@ RUN apt-get update && \
     menuselect.makeopts && \
     make && make install  && make samples && make config && \
     apt-get clean
+    
 COPY extensions.conf /etc/asterisk/extensions.conf
 COPY sip.conf /etc/asterisk/sip.conf
 COPY users.conf /etc/asterisk/users.conf
