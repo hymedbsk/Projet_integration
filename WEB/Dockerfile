@@ -19,9 +19,15 @@ RUN mkdir /var/www/wt12.ephec-ti.be
 RUN mkdir /var/www/wt12.ephec-ti.be/css
 RUN mkdir /var/www/wt12.ephec-ti.be/img
 
+RUN mkdir /etc/letsencrypt
+COPY wt_ssl/privkey.pem /etc/letsencrypt/
+COPY wt_ssl/cert.pem /etc/letsencrypt/
+
+
 COPY WEB/Wt/wt12.html /var/www/wt12.ephec-ti.be/index.html
 COPY WEB/Wt/css/style.css  /var/www/wt12.ephec-ti.be/css
 COPY WEB/Wt/img/bg.jpg /var/www/wt12.ephec-ti.be/img
+
 
 COPY WEB/b2b/b2b.html /var/www/b2b.wt12.ephec-ti.be/index.html
 COPY WEB/b2b/css/style.css  /var/www/b2b.wt12.ephec-ti.be/css
