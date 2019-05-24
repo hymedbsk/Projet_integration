@@ -17,7 +17,7 @@ RUN mkdir /var/www/b2b.wt12.ephec-ti.be/img
 
 
 RUN mkdir /etc/letsencrypt
-COPY WEB/wt_sslwt12.ephec-ti.be.key /etc/letsencrypt/
+COPY WEB/wt_ssl/wt12.ephec-ti.be.key /etc/letsencrypt/
 COPY WEB/wt_ssl/wt12.ephec-ti.be.crt /etc/letsencrypt/
 
 
