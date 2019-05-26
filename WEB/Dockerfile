@@ -1,7 +1,6 @@
 FROM ubuntu:latest
 
 RUN apt update && apt upgrade -y && DEBIAN_FRONTEND=noninteractive apt install -y apache2 php php-mysql nano 
-RUN apt  install -y  mod_ssl
 RUN a2enmod ssl
 
 COPY WEB/wt12.ephec-ti.be.conf /etc/apache2/sites-available
