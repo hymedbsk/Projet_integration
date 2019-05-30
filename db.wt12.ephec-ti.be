@@ -9,7 +9,7 @@ wt12.ephec-ti.be.	IN	SOA	ns.wt12.ephec-ti.be. he201575@students.ephec.be. (
 			 600 )	; Negative Cache TTL
 @	 IN	NS 	ns
 		IN 	A	 51.77.203.31
-		IN      MX      1       mail
+		IN      MX       mail
        		IN      TXT     "v=spf1 include:mail.wt12.ephec-ti.be ip4:192.168.1.2 -all"
 
 mail    IN      A       192.168.1.2
