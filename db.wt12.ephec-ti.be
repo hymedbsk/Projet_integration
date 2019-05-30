@@ -21,5 +21,6 @@ _sip._udp		SRV	0	0	5060	sip
 _sip._tcp		SRV 0	0	5060	sip
 sip				IN	A	51.77.203.32
 
-
+www     IN      CNAME   ns.wt12.ephec-ti.be.	
+b2b     IN      CNAME   ns.wt12.ephec-ti.be.
 
