@@ -8,13 +8,13 @@ wt12.ephec-ti.be.	IN	SOA	ns.wt12.ephec-ti.be. he201575@students.ephec.be. (
 			86400		; Expire
 			 600 )	; Negative Cache TTL
 @	 IN	 NS 	ns
-	IN 	A	 51.77.203.31
+		IN 	A	 51.77.203.31
 wt12.ephec-ti.be.      IN      NS      ns.wt12.ephec-ti.be.
 ns.wt12.ephec-ti.be.    IN      A     51.77.203.31
 
-mail    IN      A       51.77.203.28
+mail    IN      A       192.168.1.2
  	IN      MX      1       mail
-        IN      TXT     "v=spf1 include:mail.wt12.ephec-ti.be ip4:51.77.203.28 -all"
+        IN      TXT     "v=spf1 include:mail.wt12.ephec-ti.be ip4:192.168.1.2 -all"
 
 _sip._udp		SRV	0	0	5060	sip
 _sip._tcp		SRV 0	0	5060	sip
