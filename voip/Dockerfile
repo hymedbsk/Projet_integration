@@ -19,10 +19,10 @@ RUN apt-get update && \
     make && make install  && make samples && make config && \
     apt-get clean
     
-COPY extensions.conf /etc/asterisk/extensions.conf
-COPY sip.conf /etc/asterisk/sip.conf
-COPY users.conf /etc/asterisk/users.conf
-COPY voicemail.conf /etc/asterisk/voicemail.conf
+COPY voip/extensions.conf /etc/asterisk/extensions.conf
+COPY voip/sip.conf /etc/asterisk/sip.conf
+COPY voip/users.conf /etc/asterisk/users.conf
+COPY voip/voicemail.conf /etc/asterisk/voicemail.conf
 
 
 
