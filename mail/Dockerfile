@@ -15,8 +15,8 @@ RUN useradd -r -g vmail -u 5000 vmail -d /var/mail/vhosts -c "virtual mail user"
 RUN chown -R vmail:vmail /var/mail/vhosts/
 
 
-COPY hosts /etc/hosts
-COPY mailname /etc/mailname
+COPY ./hosts /etc/hosts
+COPY ./mailname /etc/mailname
 
 COPY postfix/main.cf /etc/postfix/main.cf
 COPY postfix/virtual_mailbox_domains /etc/postfix/virtual_mailbox_domains
