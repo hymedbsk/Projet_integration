@@ -26,7 +26,7 @@ COPY postfix/master.cf /etc/postfix/master.cf
 COPY dovecot/10-mail.conf /etc/dovecot/conf.d/10-mail.conf
 COPY dovecot/10-master.conf /etc/dovecot/conf.d/10-master.conf
 COPY dovecot/10-auth.conf /etc/dovecot/conf.d/10-auth.conf
-COPY dovecot/10-ssl.conf /etc/dovecot/conf.d/10-ssl.conf
+#COPY dovecot/10-ssl.conf /etc/dovecot/conf.d/10-ssl.conf
 COPY dovecot/auth-passwdfile.conf.ext /etc/dovecot/conf.d/auth-passwdfile.conf.ext
 COPY dovecot/dovecot-users /etc/dovecot/dovecot-users
 
