@@ -9,7 +9,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt install dovecot-core dovecot-imapd doveco
 RUN apt install dovecot-sieve dovecot-managesieved -y
 
 RUN mkdir /var/mail/vhosts
-RUN mkdir /var/mail/vhosts/wt1.ephec-ti.be
+RUN mkdir /var/mail/vhosts/wt12.ephec-ti.be
 RUN groupadd -g 5000 vmail
 RUN useradd -r -g vmail -u 5000 vmail -d /var/mail/vhosts -c "virtual mail user"
 RUN chown -R vmail:vmail /var/mail/vhosts/
