@@ -31,6 +31,6 @@ COPY mail/dovecot/auth-passwdfile.conf.ext /etc/dovecot/conf.d/auth-passwdfile.c
 COPY mail/dovecot/dovecot-users /etc/dovecot/dovecot-users
 
 RUN postmap /etc/postfix/virtual_mailbox_domains
-RUN postmap /etc/postfix/virtual_alias
+#RUN postmap /etc/postfix/virtual_alias
 
 EXPOSE 25 110 143 465 587 993 995
