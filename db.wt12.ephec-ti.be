@@ -13,7 +13,7 @@ wt12.ephec-ti.be.	IN	SOA	ns.wt12.ephec-ti.be. he201575@students.ephec.be. (
 wt12.ephec-ti.be.      IN      NS      ns.wt12.ephec-ti.be.
 ns.wt12.ephec-ti.be.    IN      A     51.77.203.31
 www.wt12.ephec-ti.be.     IN      A   51.77.203.31
- 	
+b2b.wt12.ephec-ti.be.     IN      A   51.77.203.31	
 
 _sip._udp		SRV	0	0	5060	sip
 _sip._tcp		SRV 0	0	5060	sip
