@@ -29,8 +29,13 @@ COPY mail/dovecot/10-auth.conf /etc/dovecot/conf.d/10-auth.conf
 #COPY mail/dovecot/10-ssl.conf /etc/dovecot/conf.d/10-ssl.conf
 COPY mail/dovecot/auth-passwdfile.conf.ext /etc/dovecot/conf.d/auth-passwdfile.conf.ext
 COPY mail/dovecot/dovecot-users /etc/dovecot/dovecot-users
+COPY mail/start_services.sh /tools/start_services.sh
 
 RUN postmap /etc/postfix/virtual_mailbox_domains
 #RUN postmap /etc/postfix/virtual_alias
 
+RUN chmod +x /tools/start_services.sh
+
 EXPOSE 25 110 143 465 587 993 995
+
+CMD /tools/start_services.sh
