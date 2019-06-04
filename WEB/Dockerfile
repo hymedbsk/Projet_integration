@@ -20,7 +20,7 @@ RUN mkdir /var/www/wt12.ephec-ti.be
 RUN mkdir /var/www/wt12.ephec-ti.be/css
 RUN mkdir /var/www/wt12.ephec-ti.be/img
 
-RUN mkdir /var/www/intranet.wt12.ephec-ti.be.conf 
+RUN mkdir /var/www/intranet.wt12.ephec-ti.be
 
 COPY WEB/Wt/wt12.html /var/www/wt12.ephec-ti.be/index.html
 COPY WEB/Wt/css/style.css  /var/www/wt12.ephec-ti.be/css
@@ -34,7 +34,7 @@ COPY WEB/b2b/img/santa.png  /var/www/b2b.wt12.ephec-ti.be/img
 COPY WEB/b2b/img/bell.png  /var/www/b2b.wt12.ephec-ti.be/img
 COPY WEB/b2b/js/snowstorm-min.js  /var/www/b2b.wt12.ephec-ti.be/js
 
-COPY WEB/Intranet/index.html /var/www/intranet.ephec-ti.be/index.html
+COPY WEB/Intranet/index.html /var/www/intranet.wt12.ephec-ti.be/index.html
 
 EXPOSE 80 443
 
