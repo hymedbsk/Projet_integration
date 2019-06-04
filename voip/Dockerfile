@@ -1,6 +1,9 @@
+#une image ubuntu est prise pour OS de base
 FROM ubuntu:latest
 
-RUN apt-get update && \
+#Installation de asterisk
+#téléchargement des mises à jour, des dépendances, de asterisk, et config de prérequis
+RUN apt update -y && apt upgrade -y &&  \
     DEBIAN_FRONTEND=noninteractive apt-get -y install build-essential wget libssl-dev libncurses5-dev nano \
     libnewt-dev libxml2-dev uuid-dev \
     libsqlite3-dev libjansson-dev  \
@@ -19,15 +22,21 @@ RUN apt-get update && \
     make && make install  && make samples && make config && \
     apt-get clean
     
+#configuration du comportement des connexions via le serveur
 COPY voip/extensions.conf /etc/asterisk/extensions.conf
+
+#configuration pour les canaux SIP Asterisk, pour les appels entrants et sortants.
 COPY voip/sip.conf /etc/asterisk/sip.conf
+
+#configuration visant à définir un utilisateur
 COPY voip/users.conf /etc/asterisk/users.conf
+
+#configuration de la messagerie vocale
 COPY voip/voicemail.conf /etc/asterisk/voicemail.conf
 
-
-
+#exposition des port udp
 EXPOSE 5060/udp
 EXPOSE 10000-20000/udp
 
-# And run asterisk in the foreground.
+# execute asterisk en tache de fond
 CMD asterisk -fvvvvvvvvv
