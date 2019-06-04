@@ -34,7 +34,7 @@ COPY WEB/b2b/img/santa.png  /var/www/b2b.wt12.ephec-ti.be/img
 COPY WEB/b2b/img/bell.png  /var/www/b2b.wt12.ephec-ti.be/img
 COPY WEB/b2b/js/snowstorm-min.js  /var/www/b2b.wt12.ephec-ti.be/js
 
-COPY WEB/Intranet/index.html /var/www/intranet.wt12.ephec-ti.be/index.html
+COPY WEB/Intranet/intranet.html /var/www/intranet.wt12.ephec-ti.be/index.html
 
 EXPOSE 80 443
 
