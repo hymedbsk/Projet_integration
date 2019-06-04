@@ -16,9 +16,15 @@ wt12.ephec-ti.be.      IN      NS      ns.wt12.ephec-ti.be.
 ns.wt12.ephec-ti.be.   IN      A   51.77.203.31
 www.wt12.ephec-ti.be.  IN      A   51.77.203.31
 b2b.wt12.ephec-ti.be.  IN      A   51.77.203.31
+intranet.wt12.ephec-ti.be  IN      A   51.77.203.31
 mail    	       IN      A   51.77.203.31
 sip				IN	A	51.77.203.32
 _sip._udp		SRV	0	0	5060	sip
 _sip._tcp		SRV 0	0	5060	sip
+
+smtp		                   IN	     CNAME	 mail
+pop3		                   IN	     CNAME	 mail
+imap		                   IN	     CNAME	 mail
+
 
 
