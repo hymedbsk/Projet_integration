@@ -122,4 +122,4 @@ scalemail-backend unix  -       n       n       -       2       pipe
 mailman   unix  -       n       n       -       -       pipe
   flags=FR user=list argv=/usr/lib/mailman/bin/postfix-to-mailman.py
   ${nexthop} ${user}
-© 2019 GitHub, Inc.
+
