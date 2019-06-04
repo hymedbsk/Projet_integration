@@ -18,7 +18,7 @@ COPY mail2/dovecot/dovecot.conf /etc/dovecot/dovecot.conf
 COPY mail2/dovecot/10-master.conf /etc/dovecot/conf.d/10-master.conf
 COPY mail2/dovecot/10-auth.conf /etc/dovecot/conf.d/10-auth.conf
 COPY mail2/dovecot/10-mail.conf /etc/dovecot/conf.d/10-mail.conf
-COPY mail2/dovecot/10-ssl.conf /etc/dovecot/conf.d/10-ssl.conf
+
 
 COPY mail2/start.sh /start.sh
 RUN chmod -R 777 /start.sh
