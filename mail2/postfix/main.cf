@@ -1,8 +1,8 @@
 #short version config
-mydomain = wt18.ephec-ti.be
-myhostname = mail.wt18.ephec-ti.be
+mydomain = wt12.ephec-ti.be
+myhostname = mail.wt12.ephec-ti.be
 myorigin = $mydomain
-mydestination = mail.wt18.ephec-ti.be, wt18.ephec-ti.be, localhost, localhost.localdomain
+mydestination = mail.wt12.ephec-ti.be, wt12.ephec-ti.be, localhost, localhost.localdomain
 
 # Utilise l'implementation Dovecot de l authentification SASL
 smtpd_sasl_type = dovecot
