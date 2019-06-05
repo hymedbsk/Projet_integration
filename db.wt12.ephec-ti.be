@@ -1,5 +1,5 @@
 
-//fichier de résolution de zone
+
 $ORIGIN wt12.ephec-ti.be.
 $TTL	3600
 wt12.ephec-ti.be.	IN	SOA	ns.wt12.ephec-ti.be. he201575@students.ephec.be. (
