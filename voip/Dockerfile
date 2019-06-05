@@ -42,4 +42,4 @@ EXPOSE 5060/udp
 EXPOSE 10000-20000/udp
 
 # execute asterisk en tache de fond
-CMD asterisk -fvvvvvvvvv
+CMD asterisk -fvvvvvvvvvr
