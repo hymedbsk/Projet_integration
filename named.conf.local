@@ -1,4 +1,5 @@
-// do any local configuration here
+// ce fichier contient les configurations locales: la définition des vue interne et externe à l'entreprise
+
 
 
 acl ip_interne { 
