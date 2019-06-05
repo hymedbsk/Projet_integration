@@ -1,5 +1,5 @@
 
-//ce fichier est utile aux configurations optionnelles
+
 options {
 	directory "/var/cache/bind";
 
