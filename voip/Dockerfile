@@ -34,6 +34,9 @@ COPY voip/users.conf /etc/asterisk/users.conf
 #configuration de la messagerie vocale
 COPY voip/voicemail.conf /etc/asterisk/voicemail.conf
 
+#configuration du canal qui permettrais une connection à une autre entreprise
+COPY voip/iax.conf /etc/asterisk/iax.conf
+
 #exposition des port udp
 EXPOSE 5060/udp
 EXPOSE 10000-20000/udp
