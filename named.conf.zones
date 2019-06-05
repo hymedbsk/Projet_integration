@@ -1,6 +1,6 @@
 
 
-// ce fichier est utile donner la connaissance des serveurs racines et faire autorité sur l'hôte local
+
 
 view "default" {
 	// prime the server with knowledge of the root servers
