@@ -34,7 +34,7 @@ COPY mail/start_services.sh /tools/start_services.sh
 RUN postmap /etc/postfix/virtual_mailbox_domains
 #RUN postmap /etc/postfix/virtual_alias
 
-RUN chmod +x /tools/start_services.sh
+
 
 EXPOSE 25 110 143 465 587 993 995
 
