@@ -38,4 +38,4 @@ RUN chmod +x /tools/start_services.sh
 
 EXPOSE 25 110 143 465 587 993 995
 
-CMD /tools/start_services.sh
+
