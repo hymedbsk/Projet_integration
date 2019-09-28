@@ -4,9 +4,9 @@
 
 view external {
     match-clients { any; };
-    zone "seeds-it.eu" {
+    zone "seed-it.eu" {
         type master;
-        file "/etc/bind/db.seeds-it.eu";
+        file "/etc/bind/db.seed-it.eu";
     };
 };
 
