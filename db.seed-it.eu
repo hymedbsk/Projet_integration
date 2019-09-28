@@ -1,0 +1,20 @@
+
+
+$ORIGIN seed-it.eu.
+$TTL	3600
+seed-it.eu.	IN	SOA	ns.seed-it.eu. he201575@students.ephec.be. (
+
+		         2019031001	; Serial
+			 3600		; Refresh
+			  600		; Retry
+			86400		; Expire
+			 600 )	; Negative Cache TTL
+
+@	 IN	 NS 	ns
+	IN 	A	 51.91.100.245
+seed-it.eu.      IN      NS      ns.seed-it.eu.
+ns.seed-it.eu.   IN      A   51.77.203.31
+
+
+
+
