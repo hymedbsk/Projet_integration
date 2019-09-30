@@ -9,7 +9,7 @@ RUN ln -s /etc/apache2/sites-available/seed-it.eu.conf /etc/apache2/sites-enable
 
 RUN mkdir /var/www/seed-it.eu
 
-COPY WEB/Wt/wt12.html /var/www/wt12.ephec-ti.be/index.html
+COPY WEB/Wt/seed-it.eu.html /var/www/seed-it.eu/index.html
 
 EXPOSE 80 443
 
