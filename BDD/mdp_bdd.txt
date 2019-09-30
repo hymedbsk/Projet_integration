@@ -1,2 +1,0 @@
-mdp mysql-server root : zfEFDJr562Mv59sP5q
-mdp mysqladmin root : 37pDPb56qm8DWx2CxN
