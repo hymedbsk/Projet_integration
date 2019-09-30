@@ -9,7 +9,10 @@ $TTL	3600
 			  600		; Retry
 			86400		; Expire
 			 600 )	; Negative Cache TTL
-seed-it.eu.   IN      A   51.99.100.245
+	  	IN      A   	51.99.100.245
+seed-it.eu. 	IN  	A 	51.99.100.245
+www.seed-it.eu. IN 	A 	51.99.100.245
+
 
 
 
