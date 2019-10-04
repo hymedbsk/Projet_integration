@@ -8,8 +8,14 @@ COPY WEB/seed-it.eu.conf /etc/apache2/sites-available
 RUN ln -s /etc/apache2/sites-available/seed-it.eu.conf /etc/apache2/sites-enabled
 
 RUN mkdir /var/www/seed-it.eu
+RUN mkdir /var/www/seed-it.eu/css
+RUN mkdir /var/www/seed-it.eu/images
 
-COPY WEB/Wt/seed-it.eu.html /var/www/seed-it.eu/index.html
+COPY WEB/acceuil/index.html /var/www/seed-it.eu/index.html
+COPY WEB/acceuil/css/default.css /var/www/seed-it.eu/css
+COPY WEB/acceuil/images/seed.png /var/www/seed-it.eu/images
+COPY WEB/acceuil/images/seed-it-logo.png /var/www/seed-it.eu/images
+COPY WEB/acceuil/images/Raspberrypi.png /var/www/seed-it.eu/images
 
 EXPOSE 80 443
 
