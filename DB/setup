@@ -1,0 +1,4 @@
+service mysql start
+mysql -u root --password=zfEFDJr562Mv59sP5q
+mysql -u root --password=zfEFDJr562Mv59sP5q < /tmp/db.sql
+mysqladmin -u root --password=37pDPb56qm8DWx2CxN shutdown
