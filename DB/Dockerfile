@@ -8,14 +8,14 @@ RUN ["/bin/bash", "-c", "debconf-set-selections <<< 'mysql-server mysql-server/r
 RUN mkdir /var/run/mysqld \
  && chown -R mysql:mysql /var/run/mysqld
 
-COPY setup /tmp
-COPY db.sql /tmp
+COPY ~/db/setup /tmp
+COPY ~/db/db.sql /tmp
 
 RUN chmod u+x /tmp/setup
 
 RUN /tmp/setup
 
-COPY mysqld.cnf /etc/mysql/mysql.conf.d/
+COPY ~/db/mysqld.cnf /etc/mysql/mysql.conf.d/
 
 EXPOSE 3306
 
