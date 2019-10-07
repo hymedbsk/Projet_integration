@@ -1,7 +1,5 @@
 FROM ubuntu:19.04
 
-COPY resolv.conf /etc/resolv.conf
-
 RUN apt-get update && apt-get upgrade -y && apt install -y mysql-server nano
 
 RUN ["/bin/bash", "-c", "debconf-set-selections <<< 'mysql-server mysql-server/root_password password zfEFDJr562Mv59sP5q'"]
