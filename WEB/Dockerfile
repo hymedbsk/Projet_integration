@@ -19,6 +19,8 @@ COPY WEB/acceuil/images/seed.png /var/www/seed-it.eu/images
 COPY WEB/acceuil/images/seed-it-logo.png /var/www/seed-it.eu/images
 COPY WEB/acceuil/images/Raspberrypi.png /var/www/seed-it.eu/images
 
+COPY WEB/connexion/signIn.html /var/www/seed-it.eu.connexion/index.html
+
 EXPOSE 80 443
 
 CMD apachectl -DFOREGROUND
