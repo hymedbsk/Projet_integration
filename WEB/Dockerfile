@@ -11,6 +11,8 @@ RUN mkdir /var/www/seed-it.eu
 RUN mkdir /var/www/seed-it.eu/css
 RUN mkdir /var/www/seed-it.eu/images
 
+RUN mkdir /var/www/seed-it.eu.connexion
+
 COPY WEB/acceuil/index.html /var/www/seed-it.eu/index.html
 COPY WEB/acceuil/css/default.css /var/www/seed-it.eu/css
 COPY WEB/acceuil/images/seed.png /var/www/seed-it.eu/images
