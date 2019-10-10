@@ -14,6 +14,7 @@ RUN mkdir /var/www/seed-it.eu/css
 RUN mkdir /var/www/seed-it.eu/images
 
 RUN mkdir /var/www/seed-it.eu.connexion
+RUN mkdir /var/www/seed-it.eu.connexion/css
 
 COPY WEB/acceuil/index.html /var/www/seed-it.eu/index.html
 COPY WEB/acceuil/css/default.css /var/www/seed-it.eu/css
@@ -22,6 +23,7 @@ COPY WEB/acceuil/images/seed-it-logo.png /var/www/seed-it.eu/images
 COPY WEB/acceuil/images/Raspberrypi.png /var/www/seed-it.eu/images
 
 COPY WEB/connexion/signIn.html /var/www/seed-it.eu.connexion/index.html
+COPY WEB/connexion/css/signIn.css /var/www/seed-it.eu.connexion/css
 
 EXPOSE 80 443
 
