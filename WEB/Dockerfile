@@ -4,8 +4,10 @@ RUN apt update && apt upgrade -y && DEBIAN_FRONTEND=noninteractive apt install -
 RUN a2enmod ssl
 
 COPY WEB/seed-it.eu.conf /etc/apache2/sites-available
+COPY WEB/seed-it.eu.connexion.conf /etc/apache2/sites-available
 
 RUN ln -s /etc/apache2/sites-available/seed-it.eu.conf /etc/apache2/sites-enabled
+RUN ln -s /etc/apache2/sites-available/seed-it.eu.connexion.conf /etc/apache2/sites-enabled
 
 RUN mkdir /var/www/seed-it.eu
 RUN mkdir /var/www/seed-it.eu/css
