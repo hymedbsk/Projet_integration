@@ -1,7 +1,7 @@
 
 
 html {
-  background-color: #9CFE6F;
+  background-color: #e6ee9c;
 }
 
 body {
@@ -62,7 +62,7 @@ h2 {
 /* FORM */
 
 input[type=submit]  {
-  background-color: #9CFE6F;
+  background-color: #e6ee9c;
   border: none;
   color: black;
   padding: 15px 80px;
