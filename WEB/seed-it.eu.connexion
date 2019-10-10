@@ -1,6 +1,6 @@
 <VirtualHost *:80>
 	ServerAdmin he201575@students.ephec-ti.be
-	ServerName seed-it.eu/connexion
+	ServerName connexion.seed-it.eu
 	
 	DocumentRoot /var/www/seed-it.eu.connexion
 	
@@ -8,7 +8,7 @@
 
 <VirtualHost *:443>
 	ServerAdmin he201575@students.ephec-ti.be
-	ServerName seed-it.eu/connexion
+	ServerName  connexion.seed-it.eu
 	DocumentRoot /var/www/seed-it.eu.connexion
 	
 	<Directory "/var/www/seed-it.eu.connexion">
