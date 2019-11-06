@@ -10,7 +10,7 @@ RUN ln -s /etc/apache2/sites-available/seed-it.eu.conf /etc/apache2/sites-enable
 
 RUN mkdir /var/www/images
 
-COPY servWeb/images/Raspberry.png /var/www/images
+COPY servWeb/images/Raspberrypi.png /var/www/images
 COPY servWeb/images/farm-09-2-1024x104.png /var/www/images
 COPY servWeb/images/farm-27-1024x290.png /var/www/images
 COPY servWeb/images/seed-it-logo.png /var/www/images
