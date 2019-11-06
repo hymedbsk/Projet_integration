@@ -18,7 +18,7 @@ COPY servWeb/images/seed.png /var/www/images
 COPY servWeb/images/Antoine.jpg /var/www/images
 COPY servWeb/images/Constantin.jpg /var/www/images
 COPY servWeb/images/Fillip.jpg /var/www/images
-COPY servWeb/images/Hubert.jpg /var/www/images
+COPY servWeb/images/Hubert.png /var/www/images
 COPY servWeb/images/hymed.jpg /var/www/images
 COPY servWeb/images/Melvin.jpg /var/www/images
 COPY servWeb/images/nathan.jpg /var/www/images
