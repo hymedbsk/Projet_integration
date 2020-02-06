@@ -21,19 +21,19 @@ COPY Web-docker/css/owl.theme.css /var/www/css
 COPY Web-docker/css/ionicons.min.css /var/www/css
 COPY Web-docker/css/style.css /var/www/css
 
+COPY Web-docker/font/ionicons.eot /var/www/font
+COPY Web-docker/font/ionicons.svg /var/www/font
+COPY Web-docker/font/ionicons.ttf /var/www/font
+COPY Web-docker/font/ionicons.woff /var/www/font
+
+
 COPY Web-docker/js/app.js /var/www/js
-COPY Web-docker/js/ionicons.svg /var/www/js
-COPY Web-docker/js/ionicons.ttf /var/www/js
-COPY Web-docker/js/ionicons.woff /var/www/js
-
-
-COPY Web-docker/css/animate.css /var/www/css
-COPY Web-docker/css/app.css /var/www/css
-COPY Web-docker/css/owl.carousel.css /var/www/css
-COPY Web-docker/css/bootstrap.min.css /var/www/css
-COPY Web-docker/css/owl.theme.css /var/www/css
-COPY Web-docker/css/ionicons.min.css /var/www/css
-COPY Web-docker/css/style.css /var/www/css
+COPY Web-docker/js/bootstrap.min.js /var/www/js
+COPY Web-docker/js/custom.js /var/www/js
+COPY Web-docker/js/jquery-2.1.1.js /var/www/js
+COPY Web-docker/js/jquery.subscribe.js /var/www/js
+COPY Web-docker/js/menu.js /var/www/js
+COPY Web-docker/js/plugins.js /var/www/css
 
 COPY Web-docker/images/IT.jpg /var/www/images
 COPY Web-docker/images/Odd.PNG /var/www/images
