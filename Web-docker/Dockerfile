@@ -52,16 +52,25 @@ COPY Web-docker/images/imageAuDDnoir.png /var/etc/www/html/images
 COPY Web-docker/images/informatique.jpg	 /var/etc/www/html/images
 COPY Web-docker/images/infra.jpg /var/etc/www/html/images
 COPY Web-docker/images/java.jpg /var/etc/www/html/images
-
-
-
-
-
-
-
-
-
-
+COPY Web-docker/images/jean.jpg /var/etc/www/html/images
+COPY Web-docker/images/js.png /var/etc/www/html/images
+COPY Web-docker/images/langue.jpg /var/etc/www/html/images
+COPY Web-docker/images/logo-php.png /var/etc/www/html/images
+COPY Web-docker/images/logo.png /var/etc/www/html/images
+COPY Web-docker/images/ludo.jpg /var/etc/www/html/images
+COPY Web-docker/images/manuella.jpg /var/etc/www/html/images
+COPY Web-docker/images/mathias.jpg /var/etc/www/html/images
+COPY Web-docker/images/melvin.jpg /var/etc/www/html/images
+COPY Web-docker/images/nathan.jpg /var/etc/www/html/images
+COPY Web-docker/images/nicolas.jpg /var/etc/www/html/images
+COPY Web-docker/images/python.png /var/etc/www/html/images
+COPY Web-docker/images/quentin.jpg /var/etc/www/html/images
+COPY Web-docker/images/russe.jpg /var/etc/www/html/images
+COPY Web-docker/images/secu.jpg /var/etc/www/html/images
+COPY Web-docker/images/symphony.png /var/etc/www/html/images
+COPY Web-docker/images/thibault.jpg /var/etc/www/html/images
+COPY Web-docker/images/timothy.jpg /var/etc/www/html/images
+COPY Web-docker/images/tristan.jpg /var/etc/www/html/images
 
 EXPOSE 80 443
 
