@@ -39,6 +39,19 @@ COPY Web-docker/images/django.png /var/etc/www/html/images
 COPY Web-docker/images/espagnol.png /var/etc/www/html/images
 COPY Web-docker/images/favicon.png /var/etc/www/html/images
 COPY Web-docker/images/filip.jpg /var/etc/www/html/images
+COPY Web-docker/images/hymed.jpg /var/etc/www/html/images
+COPY Web-docker/images/iPhone-app.png /var/etc/www/html/images
+COPY Web-docker/images/ibra.jpg	 /var/etc/www/html/images
+COPY Web-docker/images/image-bg.jpg /var/etc/www/html/images
+COPY Web-docker/images/image-bg1.png /var/etc/www/html/images
+COPY Web-docker/images/imageAuDD.png /var/etc/www/html/images
+COPY Web-docker/images/imageAuDD1.png /var/etc/www/html/images
+COPY Web-docker/images/imageAuDD2.png	 /var/etc/www/html/images
+COPY Web-docker/images/imageAuDD3.png /var/etc/www/html/images
+COPY Web-docker/images/imageAuDDnoir.png /var/etc/www/html/images
+COPY Web-docker/images/informatique.jpg	 /var/etc/www/html/images
+COPY Web-docker/images/infra.jpg /var/etc/www/html/images
+COPY Web-docker/images/java.jpg /var/etc/www/html/images
 
 
 
