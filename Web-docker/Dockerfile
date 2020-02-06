@@ -7,7 +7,7 @@ RUN a2enmod rewrite
 COPY Web-docker/audd.conf /etc/apache2/sites-available
 
 RUN ln -s /etc/apache2/sites-available/audd.conf /etc/apache2/sites-enabled
-RUN mkdir /var/etc/www/html/images
+RUN mkdir /var/www/images
 
 COPY Web-docker/images/IT.jpg /var/etc/www/html/images
 COPY Web-docker/images/Odd.PNG /var/etc/www/html/images
